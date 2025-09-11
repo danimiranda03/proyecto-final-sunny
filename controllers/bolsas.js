@@ -1,0 +1,49 @@
+const {Model,Dataypes}=require("sequelize");
+const sequelize=require("../controllers")
+class bolsa extends Model{}
+bolsa.init(
+    {
+        id:{
+            type:Dataypes.interger,
+            autoincrement:true,
+            primarykey:true,
+        },
+        name:{
+            type:Dataypes.string(100),
+            unique:true,
+            allownull:false,
+        },
+        color:{
+            type:Dataypes.string(20),
+            allownull:false,
+        },
+        size:{
+            type:Dataypes.interger,
+            allownull:false,
+        },
+        price:{
+            type:Dataypes.interger,
+        },
+        image:{
+            type:datatypes.text,
+            allownull:true,
+        },
+        is_active:{
+            type:datatypes.boolean,
+            allownull:false,
+            defaultvalue:true,
+        },
+    },
+    {
+        sequelize,
+        modelname:"bolsa",
+        tablenames:"bolsas",
+        indexes:[
+            {fields:["name"],name:"idx_bolsas_name"},
+            {fields:["price"],name:"idex_bolsas_price"},
+        ],
+        timestamps:true,
+        underscored:true,
+    }
+)
+module.exports=bolsa
