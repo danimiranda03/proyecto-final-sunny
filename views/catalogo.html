@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/icono-sunny-S.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..
+1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Catálogo Sunnys.</title>
+  </head>
+
+  <body>
+    <div class="flex-layout">
+      <header>
+        <nav class="barra">
+          <div class="logo">
+            <img src="../images/LOGO-SUNNY-INICIO-OK-19.png" alt="logo-sunny" />
+          </div>
+
+          <div class="menu">
+            <a href="sunny.html">Sunnys</a>
+            <a href="personaliza.html">Personaliza</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="donde-encontrarnos.html">Contacto</a>
+          </div>
+
+          <div class="buscador">
+            <form action="catalogo.html" method="get">
+              <input type="search" name="q" placeholder="Buscar..." />
+              <input type="submit" value="Buscar" />
+            </form>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="banner">
+          <img
+            src="../images/BANNER-SUNNY-19-19.png"
+            alt="Banner"
+            class="banner"
+          />
+        </div>
+
+        <div>
+          <div  id="grid-container" class="grid-container">
+            <div id="mensaje"></div>
+            <!-- <div class="grid-item">
+              <img
+                src="../images/esta reu puso ser mail bco y negro.png"
+                alt="Imagen 1"
+              />
+            </div>
+            <div class="grid-item">
+              <img
+                src="../images/ya do quiedo sed adulto bco y rosa.png"
+                alt="Imagen 2"
+              />
+            </div>
+            <div class="grid-item">
+              <img
+                src="../images/ser adulto horr exp bco y negro.png"
+                alt="Imagen 3"
+              />
+            </div> -->
+          </div>
+        </div>
+      </main>
+    </div>
+    <!--división cerrando del flex-loyout-->
+
+    <footer>
+      <section class="piepagina">
+        <div class="Menu">
+          <h1>Menú</h1>
+          <a href="sunny.html">Inicio</a>
+          <a href="catalogo.html">Comprar</a>
+        </div>
+
+        <div class="nosotros">
+          <h1>Sobre Nosotros</h1>
+          <a href="Quienes-somos.html" target="_blank">¿Quienes somos?</a>
+          <a href="Donde-encontrarnos.html">Donde encontrarnos</a>
+        </div>
+
+        <div class="descubrenos">
+          <h1>Descúbrenos!</h1>
+          <a href="equipo.html">El equipo</a>
+          <a href="preguntas.html">Preguntas frecuentes</a>
+        </div>
+      </section>
+    </footer>
+
+    <script src="../controllers/catalogo.js"></script>
+    <script src="../controllers/search.js"></script>
+  </body>
+</html>

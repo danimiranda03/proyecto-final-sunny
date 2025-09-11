@@ -1,0 +1,151 @@
+* { /*Selector universal: aplica esto a todo el documento html*/
+  margin: 0; /*Quita los márgenes por defecto que los navegadores aplican a muchos elementos.*/
+  padding: 0; /*elimina el espacio interior (relleno) que los elementos puedan tener por defecto.*/
+  box-sizing: border-box; /*Cambia la forma en que el navegador calcula el tamaño de los elementos, ancho total incluye 
+  padding y borde,*/
+  font-family: "Nunito Sans", sans-serif;
+  font-size: medium;
+  font-weight: 700;
+  background-color:  #a2ccc2;
+}
+
+h1{
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  
+}
+h2{
+  font-size: large;
+  font-weight: bold;
+  text-align: center;  
+  font-style: italic;
+}
+
+body{
+    background-image: url(Fotos/fondo\ sunny\ amarillo\ y\ rosado\ .jpg);
+    background-size: cover; /*ajusta la imagen para cubrir la pantlla*/
+    background-repeat: no-repeat; /*para que la imagen no se repita*/
+    background-position: center; /*centra la imagen*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+  background-color: #a2ccc2;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.logo img{
+  height: 80px;
+  width: auto;
+  background-color: #a2ccc2;
+  justify-items: center;
+}
+
+footer{
+    background-color: #a2ccc2;
+    text-align: center;
+}
+
+footer a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.piepagina{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+main{
+  background-color: #a2ccc2;
+  top: 10%;
+  text-align: justify;
+}
+
+h1{
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center; 
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    box-sizing: border-box;   /*hace que el ancho 100% incluya el padding y borde, evitando que 
+    se salga del contenedor.*/
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;     /* modificar para eliminar margen horizontal */
+  border: 1px solid #386269;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+} /*cambiar el color del mouse cuando le pasa por encima*/
+
+#form{
+    border: 2px solid #386269;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    padding: 10px;
+    background-color: lightblue;
+}
+
+.grid-item img{ /*para darle tamaño a la imagen, uso la clase de la etiqueta donde la tengo, en este caso grid-item y le 
+                pongo img para que me tome la(s) imagen de esa etiqueta*/
+  width: 100%;
+  height: 1000px;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 10px;
+  display: block;
+}
+/*para que en celulares se vea 1 sola*/
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

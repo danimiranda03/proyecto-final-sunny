@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/icono-sunny-S.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..
+1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/personaliza.css">
+    <title>Personaliza tu Sunny</title>
+</head>
+<body>
+    
+    <header>
+         <nav>
+            <div class="logo">
+            <img src="../images/LOGO-SUNNY-INICIO-OK-19.png" alt="logo-sunny">
+            </div>
+        </nav>             
+    </header>
+
+    <main>
+    <h1>Personaliza tu Tote Bag</h1>
+    <br>
+    <p>Hola Sunny! Vamos a hacer tu Tote Bag soñada...</p>
+    <br>
+    <p>Completa el siguiente formulario con tus preferencias, dejanos todos tus datos y nos pondremos en contacto contigo
+        lo antes posible para armar algo con todo tu flow. 💃👜 </p>
+
+    <form action="TU_ENDPOINT_AQUI" method="post" enctype="multipart/form-data" id="form">
+
+
+    
+    <!-- Datos de contacto -->
+    <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@mail.com" required>
+
+    <label for="telefono">Celular:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+57 333 333 33 33" required>
+
+    <!-- Tamaños -->
+    <label for="ancho">Ancho:</label>
+        <select id="ancho" name="ancho">
+            <option value="37cm">37 cm</option>
+            <option value="45cm">45 cm</option>
+        </select>
+    
+    <label for="alto">Alto:</label>
+        <select id="alto" name="alto">
+            <option value="38cm">38 cm</option>
+            <option value="50cm">50 cm</option>
+        </select>
+
+    <label for="tiras">Largo de las tiras:</label>
+        <select id="tiras" name="tiras">
+            <option value="80cm">80 cm</option>
+            <option value="90cm">90 cm</option>
+        </select>
+
+    <!-- Colores -->
+    <label for="color_tela">Color de la tela:</label>
+        <select id="color_tela" name="color_tela">
+            <option value="blanco">Blanco</option>
+            <option value="negro">Negro</option>
+        </select>
+
+    <label for="color_letra">Color de la letra:</label>
+        <select id="color_letra" name="color_letra">
+            <option value="blanco">Blanco</option>
+            <option value="negro">Negro</option>
+            <option value="fucsia">Fucsia</option>
+        </select>
+
+    <!-- Tipografía -->
+    <label for="tipo_letra">Tipo de letra (fuente):</label>
+        <select id="tipo_letra" name="tipo_letra">
+            <option value="Montserrat">Montserrat</option>
+            <option value="Dancing Script">Dancing Script</option>
+            <option value="Raleway">Raleway</option>
+        </select>
+
+    <!-- Frase -->
+    <label for="frase">Frase que quieres en tu tote (máx. 30 caracteres):</label>
+        <input type="text" id="frase" name="frase" maxlength="30" placeholder="Escribe aquí..." required>
+    
+    <!-- Botón de envío -->
+    <input type="submit" value="Enviar.">
+
+
+    </form>
+
+
+    </main>
+
+    <footer>
+        <section class="piepagina">
+            <div class="Menu">
+                <h1>Menú</h1>
+                <a href="sunny.html">Inicio</a>
+                <a href="catalogo.html">Comprar</a>
+            </div>
+
+
+            <div class="nosotros">
+                <h1>Sobre Nosotros</h1>
+                <a href="Quienes-somos.html" target="_blank">¿Quienes somos?</a>
+                <a href="Donde-encontrarnos.html">Donde encontrarnos</a> 
+            </div>
+
+            <div class="descubrenos">
+                <h1>Descúbrenos!</h1>
+                <a href="equipo.html">El equipo</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+
+            </div>
+
+        </section>
+
+    </footer>
+</body>
+</html>
