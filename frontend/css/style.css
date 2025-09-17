@@ -1,0 +1,193 @@
+* { /*Selector universal: aplica esto a todo el documento html*/
+  margin: 0; /*Quita los márgenes por defecto que los navegadores aplican a muchos elementos.*/
+  padding: 0; /*elimina el espacio interior (relleno) que los elementos puedan tener por defecto.*/
+  box-sizing: border-box; /*Cambia la forma en que el navegador calcula el tamaño de los elementos, ancho total incluye 
+  padding y borde,*/
+  font-family: "Nunito Sans", sans-serif;
+  font-size: medium;
+  font-weight: 700;
+  background-color:  #a2ccc2;
+}
+
+body{
+    background-image: url("Fotos\fondo\sunny\amarillo%20y%20rosado.jpg");
+    background-size: cover; /*ajusta la imagen para cubrir la pantlla*/
+    background-repeat: no-repeat; /*para que la imagen no se repita*/
+    background-position: center; /*centra la imagen*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;  
+}
+
+.gracias{
+  text-align: center;
+}
+.barra{
+    position: fixed; /*fija la barra en la pantalla*/
+    top: 0; /*pegada arriba al borde*/
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: #a2ccc2;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000; /*asegura que quede por encima del contenido*/
+    height: 294,6206px;
+}
+
+.logo img{
+  height: 80px;
+  width: auto;
+}
+
+.menu a{
+  color: #386269;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.menu a:hover{ /*selecciona todos los elementos a, es un pseudoclase que aplica el estilo cuando el usuario pasa el mouse 
+  por encima del enlace*/
+  color: #d378a9;
+}
+
+.buscador input[type="search"] {
+  padding: 5px;
+}
+
+.buscador input[type="submit"]{
+  padding: 5px 10px;
+  background-color: #386269;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #a2ccc2;
+}
+#btnBuscar{
+  padding: 5px 10px;
+  background-color: #386269;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #a2ccc2;
+}
+
+.banner img{
+  width: 100%;
+  height: auto; /*373px;*/
+  max-height: 500px;
+  padding-top: 19px; /*para manejar el espacio que queda entre una imagen y la barra de navegacion*/
+  display: block; /* quita espacios en blanco extra */
+  padding-top: 19px;
+}
+
+main{
+  padding-top: 80px;
+}
+
+header{
+  display: inline-block;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; 
+    padding: 10px;
+    
+    background-color: lightblue;
+}
+
+.grid-item img{ /*para darle tamaño a la imagen, uso la clase de la etiqueta donde la tengo, en este caso grid-item y le 
+                pongo img para que me tome la(s) imagen de esa etiqueta*/
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 10px;
+  display: block;
+}
+
+.grid-item1 img{ /*para darle tamaño a la imagen, uso la clase de la etiqueta donde la tengo, en este caso grid-item y le 
+                pongo img para que me tome la(s) imagen de esa etiqueta*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 10px;
+  display: block;
+}
+.contenedorboton{ /*para central el botón en la mitad de la página*/
+  text-align: center;
+  margin-top: 20px;  
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vermas{
+  background-color: #386269;
+  color: #a2ccc2;
+  border-radius: 10px;
+  display: flex;
+  height: 40px;
+  padding: 0 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+}
+
+footer{
+    background-color: #a2ccc2;
+    text-align: center;
+}
+
+.piepagina{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+footer a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s;
+}
+
+.flex-layout{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.grid-item img {
+  width: 200px;   /* ancho fijo */
+  height: 200px;  /* alto fijo */
+  object-fit: cover; /* recorta para mantener proporción */
+  border-radius: 10px; /* opcional, esquinas redondeadas */
+  justify-content: center;
+  align-items: center;
+}
